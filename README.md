@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Invoice Form with Login
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based application that replicates a Figma design. It includes a login system, a functional invoice form, and data persistence using localStorage. The form is built with Formik for validation and management.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Login System**:
+   - Login form with validation using Formik.
+   - Session management via localStorage.
+   - Auto-login feature redirects users to the main application interface if a session exists.
+   - Logout functionality clears the session and redirects to the login page.
 
-### `npm start`
+2. **Replicated Figma Design**:
+   - Accurate replication of the provided Figma design.
+   - Responsive UI adhering to the design specifications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Functional Form**:
+   - Formik-based functional form with validation for all fields.
+   - Form data is stored in localStorage upon submission.
+   - Pre-populated form data on page reload.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Data Persistence**:
+   - Uses localStorage to ensure session and form data persist across page reloads.
 
-### `npm test`
+5. **Bonus Features**:
+   - Comprehensive validation for form fields.
+   - User-friendly error messages for invalid inputs.
+   - Dynamic styling for input validation (e.g., error highlights).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React**: For building the user interface.
+- **Formik**: For managing forms and validations.
+- **localStorage**: For data persistence.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow the steps below to set up the project locally:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/invoice-form-with-login.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd invoice-form-with-login
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   The application will run at `http://localhost:3000`.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Login**:
+   - Enter a username and password to log in.
+   - The session will be stored in localStorage.
+   - You will be redirected to the main invoice form page upon login.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Main Application**:
+   - Use the invoice form to input details. All fields are validated with Formik.
+   - Submit the form to store data in localStorage.
+   - Reload the page to see pre-populated data in the form.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Logout**:
+   - Click the "Logout" button to clear the session and return to the login page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment
 
-## Learn More
+The application is hosted and can be accessed via the following link:
+[Live Demo][(https://invoice-three-kappa.vercel.app/main)]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+├── components/
+│   ├── FormComponent.js
+│   ├── FormComponent.css
+├── pages/
+│   ├── MainPage.js
+│   ├── MainPage.css
+│   ├── LoginPage.js
+│   ├── LoginPage.css
+├── App.js
+├── App.css
+├── index.js
+└── index.css
+```
 
-### Code Splitting
+## Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start`: Runs the application in development mode.
+- `npm run build`: Builds the application for production.
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For any queries or feedback, feel free to reach out at [singh.ananya2406@gmail.com].
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
