@@ -39,11 +39,11 @@ Follow the steps below to set up the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/invoice-form-with-login.git
+   git clone https://github.com/annnanya/invoice.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd invoice-form-with-login
+   cd invoice
    ```
 3. Install dependencies:
    ```bash
