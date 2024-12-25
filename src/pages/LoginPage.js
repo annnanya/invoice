@@ -41,7 +41,7 @@ const LoginPage = () => {
                         <Field type="password" name="password" />
                         <ErrorMessage name="password" component="div" className="error" />
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit" className="btn-primary">Login</button>
                 </Form>
             </Formik>
         </div>

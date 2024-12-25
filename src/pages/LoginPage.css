@@ -6,7 +6,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
@@ -43,4 +43,21 @@ button:hover {
 .error {
     color: red;
     font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 45%;
+    height: 45px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
 }
