@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import './LoginPage.css'
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ const LoginPage = () => {
     });
 
     const onSubmit = (values) => {
-        localStorage.setItem("session", JSON.stringify(values.username));
+        localStorage.setItem("login", JSON.stringify(values.username));
         navigate("/main");
     };
 

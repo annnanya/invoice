@@ -1,29 +1,29 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import FormComponent from "../components/FormComponent";
+import './MainPage.css'
 
 const MainPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const session = localStorage.getItem("session");
-        if (!session) {
+        const login = localStorage.getItem("login");
+        if (!login) {
             navigate("/");
         }
     }, [navigate]);
 
     const handleLogout = () => {
-        localStorage.removeItem("session");
+        localStorage.removeItem("login");
         navigate("/");
     };
 
     return (
         <div className="main-page">
-            <h2>Invoice Form</h2>
+            <FormComponent />
             <button onClick={handleLogout} className="logout-btn">
                 Logout
             </button>
-            <FormComponent />
         </div>
     );
 };
